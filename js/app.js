@@ -65,6 +65,10 @@ document.addEventListener('init', function (event) {
       $("#content")[0].load("resturant.html");
     });
 
+    $("#Category_2_name").click(function () {
+      $("#content")[0].load("resturant-kababs.html");
+    });
+
 
     $("#carousel").empty();
     db.collection("recommended").get().then((querySnapshot) => {
@@ -156,11 +160,44 @@ document.addEventListener('init', function (event) {
     });
   }
 
+  if (page.id === 'resturant-kababsPage') {
+    console.log("resturant-kababsPage");
+
+    $("#backbtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
+
+    $("#homebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
+
+    $("#select1").click(function () {
+      $("#content")[0].load("resturant-kababs-menu.html");
+    });
+  }
+
+
   if (page.id === 'resturantmenuPage') {
     console.log("resturantmenuPage");
 
     $("#backbtn").click(function () {
       $("#content")[0].load("resturant.html");
+    });
+
+    $("#homebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
+
+    $("#cart").click(function () {
+      $("#content")[0].load("confirm.html");
+    });
+  }
+
+  if (page.id === 'resturant-kababsmenuPage') {
+    console.log("resturant-kababsmenuPage");
+
+    $("#backbtn").click(function () {
+      $("#content")[0].load("resturant-kababs.html");
     });
 
     $("#homebtn").click(function () {
@@ -180,6 +217,10 @@ document.addEventListener('init', function (event) {
     });
 
     $("#homebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
+
+    $("#ordernowbtn").click(function () {
       $("#content")[0].load("home.html");
     });
   }

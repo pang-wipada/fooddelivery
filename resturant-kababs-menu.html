@@ -1,0 +1,68 @@
+<ons-page id="resturant-kababsmenuPage">
+
+    <ons-toolbar>
+    <div class="left">
+                <ons-toolbar-button id="backbtn">
+                        <img src="https://image.flaticon.com/icons/svg/60/60965.svg" style="width: 15%">
+                </ons-toolbar-button>
+            </div>
+            <div class="center">EAT WITH US</div>
+            <div class="right">
+                <ons-toolbar-button id="homebtn">
+                    <ons-icon icon="fa-home" style="color: grey;"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+    </ons-toolbar>
+    
+<ons-card>
+        <ons-row id="row1">
+                <ons-col width="50%">
+                    <div class="logo" style="background-image: url('images/kababs.jpg')"></div>                                        
+                    </ons-col>
+                <ons-col width="50%">
+                        <p2>Kebabs & Kurries</p2>
+                        <br>
+                        <p4>Min Delivery : $25 /</p4> <p5>Open</p5>
+                        <br></br>
+                        <img src="https://image.flaticon.com/icons/svg/148/148839.svg" style="width: 10%">
+                        <img src="https://image.flaticon.com/icons/svg/148/148839.svg" style="width: 10%">
+                        <img src="https://image.flaticon.com/icons/svg/148/148839.svg" style="width: 10%">
+                        <img src="https://image.flaticon.com/icons/svg/148/148839.svg" style="width: 10%">
+                        <img src="https://image.flaticon.com/icons/svg/149/149220.svg" style="width: 10%">
+                        <br>
+                        <p4>27 Reviews</p4>
+                    </ons-col>
+        </ons-row>
+<br>
+
+ <ons-row class="row justify-content-center">
+
+        <ons-col>
+                               
+                <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+                    <div class="row">
+                        <div class="col">
+                            <ons-button style="background-color:goldenrod" data-toggle="modal" data-target="#cart" id="cart">Cart (<span class="total-count"></span>)</ons-button>
+                            <ons-button style="background-color:goldenrod" class="clear-cart btn btn-danger">Clear Cart</ons-button>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="width: 95%;background-color:rgb(255, 242, 208)">
+                                <div class="card-block">
+                                    <p4 class="card-title">Chicken Kababs</p4>
+                                    <p class="card-text">Price : 89 ฿</p>
+                                    <ons-button style="background-color:goldenrod"><a data-name="เคบับ" data-price="89" class="add-to-cart btn btn-primary" onclick="addtocart()">Add to cart</a></ons-button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </ons-col>
+    </ons-row>
+</ons-card>           
+</ons-page>
