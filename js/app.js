@@ -19,9 +19,9 @@ document.addEventListener('init', function (event) {
     console.log("loginPage");
 
     $("#signinbtn").click(function () {
-      var email = $("#username").val();
+      var email = $("#email").val();
       var password = $("#password").val();
-      firebase.auth().signInWithEmailAndPassword(username, password).then(function () {
+      firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
         content.load('home.html');
       })
         .catch(function (error) {
@@ -107,12 +107,31 @@ document.addEventListener('init', function (event) {
   if (page.id === 'regisPage') {
     console.log("regisPage");
 
-    $("#signup").click(function () {
+    $("#backbtn").click(function () {
       $("#content")[0].load("login.html");
     });
 
-    $("#backbtn").click(function () {
-      $("#content")[0].load("login.html");
+    $("#signup").click(function () {
+
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
+        content.load('home.html');
+      })
+
+        .catch(function (error) {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+
+          if (errorCode === 'auth/weak-password') {
+            alert('The password is too weak');
+
+          } else {
+            alert(errorMessage);
+            content.load('login.html');
+          }
+
+        });
     });
   }
 
@@ -120,6 +139,10 @@ document.addEventListener('init', function (event) {
     console.log("resturantPage");
 
     $("#backbtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
+
+    $("#homebtn").click(function () {
       $("#content")[0].load("home.html");
     });
 
@@ -134,22 +157,31 @@ document.addEventListener('init', function (event) {
     $("#backbtn").click(function () {
       $("#content")[0].load("resturant.html");
     });
+
+    $("#homebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
+
+    $("#cart").click(function () {
+      $("#content")[0].load("confirm.html");
+    });
   }
 
-
   if (page.id === 'confirmPage') {
-    console.log("resturantmenuPage");
+    console.log("confirmPage");
 
     $("#backbtn").click(function () {
       $("#content")[0].load("resturant-menu.html");
+    });
+
+    $("#homebtn").click(function () {
+      $("#content")[0].load("home.html");
     });
   }
 
 
 var shoppingCart = (function() {
-  // =============================
-  // Private methods and propeties
-  // =============================
+
   cart = [];
 
   // Constructor

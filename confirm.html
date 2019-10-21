@@ -1,13 +1,19 @@
 <ons-page id="confirmPage">
 
-        <ons-toolbar>
-                <div class="left">
-                            <ons-toolbar-button id="backbtn">
-                                    <img src="https://image.flaticon.com/icons/svg/60/60965.svg" style="width: 15%">
-                            </ons-toolbar-button>
-                        </div>
-                        <div class="center">EAT WITH US</div>
-                </ons-toolbar>
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button id="backbtn">
+                    <img src="https://image.flaticon.com/icons/svg/60/60965.svg" style="width: 15%">
+            </ons-toolbar-button>
+        </div>
+        <div class="center">EAT WITH US</div>
+        <div class="right">
+            <ons-toolbar-button id="homebtn">
+                <ons-icon icon="fa-home" style="color: grey;"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+</ons-toolbar
+    </ons-toolbar>
 
   <ons-card>
         <center>
@@ -20,18 +26,12 @@
         </center>
 
         <ons-row class="row justify-content-center">
-                <!-- <ons-col class="col-3" width="25%"></ons-col> -->
+                
                 <ons-col>
-                    <ons-card style="width: 99%">
-        
-        
-                        <!-- <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content"> -->
+
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel" style="text-align: center">CART</h5>
         
-                            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button> -->
                         </div>
                         <div class="modal-body">
                             <table class="show-cart table">
@@ -39,15 +39,10 @@
                             </table>
                             <div>Total Price : <span class="total-cart"></span> ฿</div>
                         </div>
+
                         <div style="text-align: center">
-                            <!-- <ons-button style="background-color:crimson" data-dismiss="modal">Close</ons-button> -->
-                            <ons-button class="ordernowbtn" style="background-color:blueviolet">Order now</ons-button>
-                        </div>
-                        <!-- </div>
-                            </div>
-                        </div> -->
-                    </ons-card>
-        
+                            <ons-button class="ordernowbtn" style="background-color:goldenrod">Order now</ons-button>
+                        </div>      
         
                 </ons-col>
         

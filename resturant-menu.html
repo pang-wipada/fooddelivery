@@ -7,6 +7,11 @@
                     </ons-toolbar-button>
                 </div>
                 <div class="center">EAT WITH US</div>
+                <div class="right">
+                    <ons-toolbar-button id="homebtn">
+                        <ons-icon icon="fa-home" style="color: grey;"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
         </ons-toolbar>
         
     <ons-card>
@@ -37,7 +42,7 @@
                     <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
                         <div class="row">
                             <div class="col">
-                                <ons-button style="background-color:goldenrod" data-toggle="modal" data-target="#cart" onclick="fn.load('confirm.html')">Cart (<span class="total-count"></span>)</ons-button>
+                                <ons-button style="background-color:goldenrod" data-toggle="modal" data-target="#cart" id="cart">Cart (<span class="total-count"></span>)</ons-button>
                                 <ons-button style="background-color:goldenrod" class="clear-cart btn btn-danger">Clear Cart</ons-button>
                             </div>
                         </div>
@@ -45,11 +50,11 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <div class="card" style="width: 100%;">
+                                <div class="card" style="width: 95%;background-color:rgb(255, 242, 208)">
                                     <div class="card-block">
                                         <p4 class="card-title">McFried Chicken</p4>
                                         <p class="card-text">Price : 89 ฿</p>
-                                        <ons-button style="background-color:goldenrod"><a data-name="McFried Chicken" data-price="89" class="add-to-cart btn btn-primary" onclick="addtocart()">Add to cart</a></ons-button>
+                                        <ons-button style="background-color:goldenrod"><a data-name="เ" data-price="89" class="add-to-cart btn btn-primary" onclick="addtocart()">Add to cart</a></ons-button>
                                     </div>
                                 </div>
                             </div>
@@ -57,23 +62,23 @@
                     </div>
 
                     <div class="col">
-                            <div class="card" style="width: 100%;">
+                            <div class="card" style="width: 95%;background-color:rgb(255, 242, 208)">
 
                                 <div class="card-block">
                                     <p4 class="card-title">Deluxe Cheeseburger (Beef)</p4>
                                     <p class="card-text">Price : 59 ฿</p>
-                                    <ons-button style="background-color:goldenrod"><a data-name="Deluxe Cheeseburger (Beef)" data-price="59" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
+                                    <ons-button style="background-color:goldenrod"><a data-name="" data-price="59" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
                                 </div>
                             </div>
                     </div>
 
                     <div class="col">
-                            <div class="card" style="width: 100%;">
+                            <div class="card" style="width: 95%;background-color:rgb(255, 242, 208)">
 
                                 <div class="card-block">
                                     <p4 class="card-title">Cheesy Egg Bun</p4>
                                     <p class="card-text">Price : 89 ฿</p>
-                                    <ons-button style="background-color:goldenrod"><a data-name="Cheesy Egg Bun" data-price="89" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
+                                    <ons-button style="background-color:goldenrod"><a data-name="" data-price="89" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
                                 </div>
                             </div>
                     </div>
