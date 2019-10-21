@@ -30,100 +30,54 @@
             </ons-row>
 <br>
 
-            <ons-row>
-                    <ons-col width="75%">
-                            <p4>McFried Chicken</p4>
-                            <br>
-                            <p6>Served with coke</p6>
-                        </ons-col>
-                    <ons-col width="15%">
-                            <p2>89฿</p2>
-                        </ons-col>
-                    <ons-col width="10%">
-                          <label>
-                            <ons-checkbox input-id="check-1"></ons-checkbox>
-                          </label>
-                        </ons-col>
-            </ons-row>
-            <br>
-            <ons-row>
-                    <ons-col width="75%">
-                            <p4>Deluxe Cheeseburger (Beef)</p4>
-                            <br>
-                            <p6>Served with coke</p6>
-                        </ons-col>
-                    <ons-col width="15%">
-                            <p2>59฿</p2>
-                        </ons-col>
-                    <ons-col width="10%">
-                        <label>
-                            <ons-checkbox input-id="check-2"></ons-checkbox>
-                          </label>
-                        </ons-col>
-            </ons-row>
-            <br>
-            <ons-row>
-                    <ons-col width="75%">
-                            <p4>Cheesy Egg Bun</p4>
-                            <br>
-                            <p6>Served with coke</p6>
-                        </ons-col>
-                    <ons-col width="15%">
-                            <p2>89฿</p2>
-                        </ons-col>
-                    <ons-col width="10%">
-                        <label>
-                            <ons-checkbox input-id="check-3"></ons-checkbox>
-                          </label>
-                        </ons-col>
-            </ons-row>
-            <br>
-            <ons-row>
-                    <ons-col width="75%">
-                            <p4>Fish Cheesy Egg Bun</p4>
-                            <br>
-                            <p6>Served with coke</p6>
-                        </ons-col>
-                    <ons-col width="15%">
-                            <p2>69฿</p2>
-                        </ons-col>
-                    <ons-col width="10%">
-                        <label>
-                            <ons-checkbox input-id="check-4"></ons-checkbox>
-                          </label>
-                        </ons-col>
-            </ons-row>
-            <br>
-            <ons-row>
-                    <ons-col width="75%">
-                            <p4>Big Mac (Beef)</p4>
-                            <br>
-                            <p6>Served with coke</p6>
-                        </ons-col>
-                    <ons-col width="15%">
-                            <p2>89฿</p2>
-                        </ons-col>
-                    <ons-col width="10%">
-                        <label>
-                            <ons-checkbox input-id="check-5"></ons-checkbox>
-                          </label>
-                        </ons-col>
-            </ons-row>
-   
-     </ons-card>
+     <ons-row class="row justify-content-center">
 
-    
-        <br>
-    <ons-card>
-            <ons-row>
-            <ons-col width="70%">
-                    &nbsp; &nbsp;
-                Your Order  : 
+            <ons-col>
+                                   
+                    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+                        <div class="row">
+                            <div class="col">
+                                <ons-button style="background-color:goldenrod" data-toggle="modal" data-target="#cart" onclick="fn.load('confirm.html')">Cart (<span class="total-count"></span>)</ons-button>
+                                <ons-button style="background-color:goldenrod" class="clear-cart btn btn-danger">Clear Cart</ons-button>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card" style="width: 100%;">
+                                    <div class="card-block">
+                                        <p4 class="card-title">McFried Chicken</p4>
+                                        <p class="card-text">Price : 89 ฿</p>
+                                        <ons-button style="background-color:goldenrod"><a data-name="McFried Chicken" data-price="89" class="add-to-cart btn btn-primary" onclick="addtocart()">Add to cart</a></ons-button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                            <div class="card" style="width: 100%;">
+
+                                <div class="card-block">
+                                    <p4 class="card-title">Deluxe Cheeseburger (Beef)</p4>
+                                    <p class="card-text">Price : 59 ฿</p>
+                                    <ons-button style="background-color:goldenrod"><a data-name="Deluxe Cheeseburger (Beef)" data-price="59" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col">
+                            <div class="card" style="width: 100%;">
+
+                                <div class="card-block">
+                                    <p4 class="card-title">Cheesy Egg Bun</p4>
+                                    <p class="card-text">Price : 89 ฿</p>
+                                    <ons-button style="background-color:goldenrod"><a data-name="Cheesy Egg Bun" data-price="89" class="add-to-cart btn btn-primary">Add to cart</a></ons-button>
+                                </div>
+                            </div>
+                    </div>
             </ons-col>
-            <ons-col width="30%">
-                <button class="button button--material" id="orderbtn"><b>Order</b></button>
-            </ons-col>
-            </ons-row>
-        </ons-card>
-                    
+        </ons-row>
+    </ons-card>           
 </ons-page>

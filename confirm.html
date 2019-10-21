@@ -19,81 +19,38 @@
             <br></br>
         </center>
 
-            <ons-row id="color-gray">
-                    <ons-col width="20%">
-                            <p4>Quantity</p4>
-                        </ons-col>
-                    <ons-col width="70%">
-                            <p4>Name of Dish</p4>
-                        </ons-col>
-                    <ons-col width="10%">
-                            <p4>Price</p4>
-                        </ons-col>
-            </ons-row>
-
-            <ons-row>
-                    <ons-col width="20%">
-                            <p4>1</p4>
-                        </ons-col>
-                    <ons-col width="70%">
-                            <p4>Chicken Chowmein</p4>
-                        </ons-col>
-                    <ons-col width="10%">
-                            <p4>$30</p4>
-                        </ons-col>
-            </ons-row>
-
-            <ons-row>
-                    <ons-col width="20%">
-                            <p4>2</p4>
-                        </ons-col>
-                    <ons-col width="70%">
-                            <p4>Beef Stir Fry</p4>
-                        </ons-col>
-                    <ons-col width="10%">
-                            <p4>$10</p4>
-                        </ons-col>
-            </ons-row>
-
-            
-            <ons-row>
-                    <ons-col width="20%">
-                            <p4>3</p4>
-                        </ons-col>
-                    <ons-col width="70%">
-                            <p4>Soft Drinks(Coke)</p4>
-                        </ons-col>
-                    <ons-col width="10%">
-                            <p4>$8.5</p4>
-                        </ons-col>
-            </ons-row>
-            
-            <br>
+        <ons-row class="row justify-content-center">
+                <!-- <ons-col class="col-3" width="25%"></ons-col> -->
+                <ons-col>
+                    <ons-card style="width: 99%">
         
-        <ons-card id="color-gray">
-            <p2>Total : $48.5</p2>
-        </ons-card>
-
-        <ons-card id="card-border">
-                <p2>Enter coupon if you have any</p2>
-        </ons-card>
-      
         
-        <center><p2><b>Pay via</b></p2></center>
-        <br>
-
-        <ons-button modifier="large" id="creditcard">
-            <p2>Credit Card</p2>
-        </ons-button>
-        <br>
-
-        <ons-button modifier="large" id="paypal">
-            <p2>PayPal</p2>
-        </ons-button>
-        <br>
-
-        <ons-button modifier="large">
-            <p2>Cash on Delivery</p2>
-        </ons-button>
+                        <!-- <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content"> -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel" style="text-align: center">CART</h5>
+        
+                            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button> -->
+                        </div>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+        
+                            </table>
+                            <div>Total Price : <span class="total-cart"></span> ฿</div>
+                        </div>
+                        <div style="text-align: center">
+                            <!-- <ons-button style="background-color:crimson" data-dismiss="modal">Close</ons-button> -->
+                            <ons-button class="ordernowbtn" style="background-color:blueviolet">Order now</ons-button>
+                        </div>
+                        <!-- </div>
+                            </div>
+                        </div> -->
+                    </ons-card>
+        
+        
+                </ons-col>
+        
+            </ons-row>
   </ons-card>
 </ons-page>
