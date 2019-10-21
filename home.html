@@ -1,0 +1,85 @@
+<ons-page id="homePage">
+    <ons-toolbar>
+        <div class="left">
+            <!-- Toolbar-button with different icons depending on the platform. -->
+            <ons-toolbar-button id="menubtn">
+                <ons-icon icon="ion-navicon, material:md-menu" size="32px, material:24px"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">EAT WITH US</div>
+        <div class="right">
+            <ons-toolbar-button>
+                <ons-icon icon="fa-user-circle"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+    <p style="text-align: center; margin-top: 70px; margin-bottom: 10px;">
+        <ons-search-input placeholder="Food or Restuarant">
+        </ons-search-input>
+    </p>
+
+    <div class="content" style="text-align: center;">
+        <div class="recommended">
+            <h4>Recommended</h4>
+            <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
+                class="recommended_list" id="carousel">
+                <ons-carousel-item modifier="nodivider" id="item1" class="recommended_item">
+                    <div class="thumbnail" style="background-image: url('images/item1.jpg')">
+                    </div>
+                </ons-carousel-item>                
+            </ons-carousel>
+        </div>
+
+        <div class="category_content">
+            <h4 style="margin-top: 0px">Food Category</h4>
+            <ons-row class="category">
+                <ons-col modifier="nodivider">
+                    <div class="category_wrapper" style="background-image: url('images/category1.jpg')">
+                        <figure class="category_thumbnail">
+                            <div class="category_title" id="Category_1_name">Thai</div>
+                        </figure>
+                    </div>
+                </ons-col>
+                <ons-col modifier="nodivider">
+                    <div class="category_wrapper" style="background-image: url('images/category2.jpg')">
+                        <figure class="category_thumbnail">
+                            <div class="category_title" id="Category_1_name">Isan</div>
+                        </figure>
+                    </div>
+                </ons-col>
+            </ons-row>
+            <ons-row class="category">
+                <ons-col modifier="nodivider">
+                    <div class="category_wrapper" style="background-image: url('images/category3.jpg')">
+                        <figure class="category_thumbnail">
+                            <div class="category_title" id="Category_1_name">South</div>
+                        </figure>
+                    </div>
+                </ons-col>
+                <ons-col modifier="nodivider">
+                    <div class="category_wrapper" style="background-image: url('images/category4.jpg')">
+                        <figure class="category_thumbnail">
+                            <div class="category_title" id="Category_1_name">North</div>
+                        </figure>
+                    </div>
+                </ons-col>
+            </ons-row>
+            <ons-row class="category">
+                <ons-col modifier="nodivider">
+                    <div class="category_wrapper" style="background-image: url('images/category5.jpg')">
+                        <figure class="category_thumbnail">
+                            <div class="category_title" id="Category_1_name">Spicy</div>
+                        </figure>
+                    </div>
+                </ons-col>
+                <ons-col modifier="nodivider">
+                    <div class="category_wrapper" style="background-image: url('images/category6.jpg')">
+                        <figure class="category_thumbnail">
+                            <div class="category_title" id="Category_1_name">Local</div>
+                        </figure>
+                    </div>
+                </ons-col>
+            </ons-row>
+        </div>
+</ons-page>
+
