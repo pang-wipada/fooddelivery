@@ -90,6 +90,11 @@ document.addEventListener('init', function (event) {
       $("#content")[0].load("home.html");
       $("#sidemenu")[0].close();
     });
+
+    $("#logout").click(function () {
+      $("#content")[0].load("login.html");
+      $("#sidemenu")[0].close();
+    });
   }
 
   if (page.id === 'loginPage') {
