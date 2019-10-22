@@ -1,7 +1,6 @@
 {
   "hosting": {
-    "public": "public",
-    "site": "food-delivery-68b19",
+    "public": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
