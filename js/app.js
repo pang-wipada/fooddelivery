@@ -205,7 +205,7 @@ document.addEventListener('init', function (event) {
     });
 
     $("#cart").click(function () {
-      $("#content")[0].load("confirm.html");
+      $("#content")[0].load("confirm-kababs.html");
     });
   }
 
@@ -214,6 +214,22 @@ document.addEventListener('init', function (event) {
 
     $("#backbtn").click(function () {
       $("#content")[0].load("resturant-menu.html");
+    });
+
+    $("#homebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
+
+    $("#ordernowbtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
+  }
+
+  if (page.id === 'confirm-kababsPage') {
+    console.log("confirm-kababsPage");
+
+    $("#backbtn").click(function () {
+      $("#content")[0].load("resturant-kababs-menu.html");
     });
 
     $("#homebtn").click(function () {
