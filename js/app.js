@@ -50,7 +50,9 @@ document.addEventListener('init', function (event) {
 
     });
 
-    var provider = new firebase.auth.GoogleAuthProvider();
+    $("#gmail").click(function () {
+      console.log("gmail");
+      var provider = new firebase.auth.GoogleAuthProvider();
       firebase.auth().signInWithRedirect(provider);
       firebase.auth().getRedirectResult().then(function(result) {
         if (result.credential) {
@@ -69,8 +71,10 @@ document.addEventListener('init', function (event) {
         // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
         // ...
-      });  
-
+      });
+      
+    });
+  
   }
 
 
