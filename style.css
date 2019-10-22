@@ -127,6 +127,14 @@
     background-size: 100%;
 }
 
+.menu {
+    width: 120px;
+    height: 120px;
+    display: table;
+    background-color: rgba(0, 0, 0, 0.42);
+    background-size: 100%;
+}
+
 p1 {
     font: 1em sans-serif;
     font-family: 'PT Sans', sans-serif;
